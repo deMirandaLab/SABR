@@ -16,8 +16,8 @@ Imaging mass cytometry (IMC) allows the detection of multiple antigens (approxim
 ## Use
 Detailed step-by-step instructions are available in the [IMC_analysis_guidelines](/IMC_analysis_guidelines_SABR.pdf)
 
-In short, raw IMC images are exported from the standard biotools/fluidigm MCD viewer as single-marker images and adapted to Ilastik-readable TIFF files using the 'Prepare_Images_for_Ilastik3' matlab script. 
-Semi automated background removal (SABR) is performed for each marker using the 'Ilastik_Backgroundremoval.ilp' ilastik pipeline. The resulting output are binary tiff images where '0' corresponds to background and '1' to signal. these files can be directly combined with a cellsegmentation masks for downstream IMC analyses
+In short, raw IMC images are exported from the standard biotools/fluidigm MCD viewer as single-marker images and adapted to Ilastik-readable TIFF files using the [Prepare_Images_for_Ilastik3](Prepare_Images_for_Ilastik3.m) matlab script. 
+Semi automated background removal (SABR) is performed for each marker using the [Ilastik_Backgroundremoval](Ilastik_Backgroundremoval.ilp) ilastik pipeline. The resulting output are binary tiff images where '0' corresponds to background and '1' to signal. these files can be directly combined with a cellsegmentation masks for downstream IMC analyses
 
 <br/>
 
